@@ -61,7 +61,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products, isLoading = false }
               onAddToCart={() => {
                 console.log('Added to cart:', product);
               }}
-              onClick={handleProductClick}
+              onClick={() => handleProductClick(product.id)}
             />
           ))}
       </div>
