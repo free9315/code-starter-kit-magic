@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 interface FeaturedCategory {
   id: string;
@@ -16,11 +15,9 @@ interface FeaturedCategoriesProps {
 }
 
 const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({ categories }) => {
-  const navigate = useNavigate();
-
   const handleCategoryClick = (category: FeaturedCategory) => {
-    // Navigate to product listing page
-    navigate(`/products/men/${category.id}`);
+    console.log('Category selected:', category.name);
+    // You can add category filtering logic here in the future
   };
 
   // Limit to 9 categories, handling cases where categories might be undefined.
@@ -28,7 +25,7 @@ const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({ categories }) =
 
   return (
     <div className="px-4 mb-8">
-      <h2 className="text-lg font-bold text-gray-900 mb-4">Featured Categories</h2>
+      <h2 className="text-lg font-bold text-gray-900 mb-4">Meal Categories</h2>
       
       <div className="grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-3">
         {displayCategories.map((category) => (
@@ -51,7 +48,7 @@ const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({ categories }) =
               {category.isDeal && (
                 <div className="mb-1 md:mb-2">
                   <div className="inline-block bg-red-600 text-white text-xs font-bold px-1 md:px-2 py-0.5 md:py-1 rounded">
-                    SNITCH DEAL OF THE DAY
+                    SPECIAL MEAL DEAL
                   </div>
                 </div>
               )}
@@ -75,7 +72,7 @@ const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({ categories }) =
                 
                 {category.isDeal && !category.subtitle && (
                   <p className="text-xs text-gray-200">
-                    selected products
+                    selected meals
                   </p>
                 )}
               </div>

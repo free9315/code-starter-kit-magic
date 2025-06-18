@@ -78,11 +78,11 @@ export const banners = {
 export const heroImages = {
   'north-indian': {
     quickPicks: {
-      image: "/lovable-uploads/ecaaf61b-2105-4c36-8464-0d14580e5913.png",
+      image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&h=400&fit=crop",
       title: "TODAY'S SPECIAL"
     },
     trending: {
-      image: "/lovable-uploads/ed93d5d3-7dfc-435d-b618-f1ec8b6380b5.png",
+      image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&h=400&fit=crop",
       title: "Most Loved Meals"
     }
   },
@@ -146,7 +146,7 @@ export const featuredCategories = {
     {
       id: 'paratha',
       name: 'PARATHAS',
-      image: '/lovable-uploads/b99f6ddd-7e0e-4350-8ad7-cf9871803b27.png'
+      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=400&fit=crop'
     },
     {
       id: 'curry',
@@ -156,7 +156,7 @@ export const featuredCategories = {
     {
       id: 'snacks',
       name: 'SNACKS',
-      image: '/lovable-uploads/0cff6b78-99d4-48a8-a295-5bb972aa9d6d.png'
+      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=300&h=400&fit=crop'
     },
     {
       id: 'breakfast',
@@ -166,7 +166,7 @@ export const featuredCategories = {
     {
       id: 'combo-meal',
       name: 'COMBO MEALS',
-      image: '/lovable-uploads/eca9ad5a-9d61-4827-bf3c-e5457cc2030f.png'
+      image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=400&fit=crop'
     },
     {
       id: 'premium',

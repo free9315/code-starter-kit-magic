@@ -2,7 +2,6 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 import { Skeleton } from './ui/skeleton';
-import { useNavigate } from 'react-router-dom';
 
 interface ProductForCard {
   id: string;
@@ -19,16 +18,6 @@ interface ProductGridProps {
 }
 
 const ProductGrid: React.FC<ProductGridProps> = ({ products, isLoading = false }) => {
-  const navigate = useNavigate();
-
-  const handleProductClick = (productId: string) => {
-    // Extract numeric ID from Shopify GID
-    const numericId = productId.split('/').pop();
-    if (numericId) {
-      navigate(`/product/${numericId}`);
-    }
-  };
-
   if (isLoading) {
     return (
       <div className="px-4 py-6">
@@ -61,7 +50,6 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products, isLoading = false }
               onAddToCart={() => {
                 console.log('Added to cart:', product);
               }}
-              onClick={() => handleProductClick(product.id)}
             />
           ))}
       </div>

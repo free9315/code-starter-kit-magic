@@ -86,7 +86,7 @@ const Index: React.FC = () => {
         {/* Hero Section - Background image with overlay content */}
         <div className="relative" style={{
           height: '55vh',
-          backgroundImage: 'url(/lovable-uploads/3d5567e9-bee1-49b1-846c-a831ff5e4325.png)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
@@ -94,13 +94,13 @@ const Index: React.FC = () => {
           <div className="absolute top-0 left-0 right-0 z-10 px-4 py-3">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-black" />
+                <MapPin className="w-4 h-4 text-white" />
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1 py-0">
-                    <span className="text-zinc-950 text-lg font-bold">Home</span>
-                    <ChevronDown className="w-4 h-4 text-black" />
+                    <span className="text-white text-lg font-bold">Home</span>
+                    <ChevronDown className="w-4 h-4 text-white" />
                   </div>
-                  <span className="opacity-90 text-zinc-950 font-semibold text-xs">Flat 103, house 288, Medicity, Islam...</span>
+                  <span className="opacity-90 text-white font-semibold text-xs">Flat 103, house 288, Medicity, Islam...</span>
                 </div>
               </div>
               
@@ -109,7 +109,7 @@ const Index: React.FC = () => {
                   onClick={() => navigate('/cart')}
                   className="relative"
                 >
-                  <ShoppingCart className="w-5 h-5 text-black" />
+                  <ShoppingCart className="w-5 h-5 text-white" />
                   <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></div>
                 </button>
                 <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
