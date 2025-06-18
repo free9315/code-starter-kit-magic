@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Search, Grid3X3, User, ShoppingCart } from 'lucide-react';
+import { Home, Search, Grid3X3, User, ShoppingCart, Calendar } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 interface NavigationBarProps {
@@ -15,6 +15,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ cartItemCount = 0 }) => {
     { icon: Home, label: 'Home', path: '/' },
     { icon: Search, label: 'Search', path: '/search' },
     { icon: Grid3X3, label: 'Explore', path: '/explore' },
+    { icon: Calendar, label: 'Plans', path: '/plans' },
     { icon: User, label: 'Profile', path: '/profile' },
     { icon: ShoppingCart, label: 'Cart', path: '/cart', badge: cartItemCount > 0 }
   ];
