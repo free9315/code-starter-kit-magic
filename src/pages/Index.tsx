@@ -83,10 +83,10 @@ const Index: React.FC = () => {
   return (
     <Layout cartItems={cartItems} onUpdateCartQuantity={handleUpdateCartQuantity} onRemoveCartItem={handleRemoveCartItem}>
       <div className="bg-white min-h-screen">
-        {/* Hero Section - Dark theme background image */}
+        {/* Hero Section - Updated with new image */}
         <div className="relative" style={{
           height: '55vh',
-          backgroundImage: 'url(https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop)',
+          backgroundImage: 'url(/lovable-uploads/3ecc32a1-feff-4d6b-b1d0-5427ee2e066f.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
