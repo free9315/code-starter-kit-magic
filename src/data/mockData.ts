@@ -1,428 +1,409 @@
-// Mock data for the application
+
+// Mock data for Homely - Home-cooked food ordering app
 export const categories = [
   {
-    id: 'women',
-    name: 'Women',
-    image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=100&h=100&fit=crop&crop=face'
+    id: 'north-indian',
+    name: 'North Indian',
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=100&h=100&fit=crop'
   },
   {
-    id: 'men',
-    name: 'Men',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+    id: 'south-indian',
+    name: 'South Indian',
+    image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=100&h=100&fit=crop'
   },
   {
-    id: 'footwear',
-    name: 'Footwear',
-    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=100&h=100&fit=crop'
+    id: 'continental',
+    name: 'Continental',
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=100&h=100&fit=crop'
   },
   {
-    id: 'accessories',
-    name: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=100&h=100&fit=crop'
+    id: 'desserts',
+    name: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=100&h=100&fit=crop'
   }
 ];
 
 export const banners = {
-  women: [
+  'north-indian': [
     {
-      title: "Ethnic Collection",
-      subtitle: "UPTO 70% OFF - SHOP NOW",
-      image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&h=400&fit=crop"
+      title: "Authentic Home Meals",
+      subtitle: "FRESH MADE - ORDER NOW",
+      image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&h=400&fit=crop"
     },
     {
-      title: "Western Wear",
-      subtitle: "New Arrivals - Trendy Styles",
-      image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=400&fit=crop"
+      title: "Mom's Special Recipes",
+      subtitle: "Traditional Flavors at Home",
+      image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&h=400&fit=crop"
     }
   ],
-  men: [
+  'south-indian': [
     {
-      title: "Formal Collection",
-      subtitle: "Premium Shirts & Blazers",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop"
+      title: "South Indian Delights",
+      subtitle: "Crispy Dosas & More",
+      image: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800&h=400&fit=crop"
     },
     {
-      title: "Casual Wear",
-      subtitle: "Comfortable & Stylish",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=400&fit=crop"
+      title: "Filter Coffee & Breakfast",
+      subtitle: "Authentic South Indian Taste",
+      image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&h=400&fit=crop"
     }
   ],
-  footwear: [
+  continental: [
     {
-      title: "Sneaker Collection",
-      subtitle: "Latest Styles Available",
-      image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=400&fit=crop"
+      title: "Continental Classics",
+      subtitle: "Pasta, Salads & More",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=400&fit=crop"
     },
     {
-      title: "Formal Shoes",
-      subtitle: "Office Ready Footwear",
-      image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=800&h=400&fit=crop"
+      title: "Healthy Options",
+      subtitle: "Fresh & Nutritious Meals",
+      image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=400&fit=crop"
     }
   ],
-  accessories: [
+  desserts: [
     {
-      title: "Bags & Wallets",
-      subtitle: "Premium Leather Collection",
-      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=400&fit=crop"
+      title: "Sweet Treats",
+      subtitle: "Homemade Desserts",
+      image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800&h=400&fit=crop"
     },
     {
-      title: "Watches & Jewelry",
-      subtitle: "Elegant Timepieces",
-      image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&h=400&fit=crop"
+      title: "Traditional Sweets",
+      subtitle: "Just Like Grandma Made",
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=800&h=400&fit=crop"
     }
   ]
 };
 
 // Hero images for ProductGrid sections by category
 export const heroImages = {
-  women: {
+  'north-indian': {
     quickPicks: {
       image: "/lovable-uploads/ecaaf61b-2105-4c36-8464-0d14580e5913.png",
-      title: "SEASON'S STANDOUT"
+      title: "TODAY'S SPECIAL"
     },
     trending: {
       image: "/lovable-uploads/ed93d5d3-7dfc-435d-b618-f1ec8b6380b5.png",
-      title: "Products you can't miss"
+      title: "Most Loved Meals"
     }
   },
-  men: {
+  'south-indian': {
     quickPicks: {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop",
-      title: "MEN'S ESSENTIALS"
+      image: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800&h=400&fit=crop",
+      title: "BREAKFAST SPECIALS"
     },
     trending: {
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=400&fit=crop",
-      title: "Trending men's styles"
+      image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800&h=400&fit=crop",
+      title: "Popular South Indian"
     }
   },
-  footwear: {
+  continental: {
     quickPicks: {
-      image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=400&fit=crop",
-      title: "STEP IN STYLE"
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=400&fit=crop",
+      title: "HEALTHY CHOICES"
     },
     trending: {
-      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=400&fit=crop",
-      title: "Latest footwear trends"
+      image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=400&fit=crop",
+      title: "Continental favorites"
     }
   },
-  accessories: {
+  desserts: {
     quickPicks: {
-      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=400&fit=crop",
-      title: "ACCESSORY PICKS"
+      image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800&h=400&fit=crop",
+      title: "SWEET TREATS"
     },
     trending: {
-      image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&h=400&fit=crop",
-      title: "Must-have accessories"
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=800&h=400&fit=crop",
+      title: "Popular desserts"
     }
   }
 };
 
 // Featured Categories for each main category
 export const featuredCategories = {
-  women: [
+  'north-indian': [
     {
-      id: 'deal-women',
-      name: 'SNITCH DEAL OF THE DAY',
-      subtitle: 'UP TO 40% OFF*',
-      image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=300&h=400&fit=crop',
+      id: 'deal-north',
+      name: 'TODAY\'S SPECIAL THALI',
+      subtitle: 'UP TO 30% OFF*',
+      image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&h=400&fit=crop',
       isDeal: true
     },
     {
-      id: 'new-arrivals-women',
-      name: 'NEW ARRIVALS',
-      image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300&h=400&fit=crop'
+      id: 'roti-sabzi',
+      name: 'ROTI & SABZI',
+      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300&h=400&fit=crop'
     },
     {
-      id: 'dresses',
-      name: 'DRESSES',
-      image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&h=400&fit=crop'
+      id: 'dal-chawal',
+      name: 'DAL CHAWAL',
+      image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=300&h=400&fit=crop'
     },
     {
-      id: 'kurtis',
-      name: 'KURTIS',
-      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop'
+      id: 'biryani',
+      name: 'BIRYANI',
+      image: 'https://images.unsplash.com/photo-1563379091339-03246963d321?w=300&h=400&fit=crop'
     },
     {
-      id: 'tops-women',
-      name: 'TOPS',
+      id: 'paratha',
+      name: 'PARATHAS',
       image: '/lovable-uploads/b99f6ddd-7e0e-4350-8ad7-cf9871803b27.png'
     },
     {
-      id: 'jeans-women',
-      name: 'JEANS',
-      image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=300&h=400&fit=crop'
+      id: 'curry',
+      name: 'CURRIES',
+      image: 'https://images.unsplash.com/photo-1574653853027-5d3348d37e7b?w=300&h=400&fit=crop'
     },
     {
-      id: 'skirts',
-      name: 'SKIRTS',
+      id: 'snacks',
+      name: 'SNACKS',
       image: '/lovable-uploads/0cff6b78-99d4-48a8-a295-5bb972aa9d6d.png'
     },
     {
-      id: 'ethnic-women',
-      name: 'ETHNIC WEAR',
-      image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=300&h=400&fit=crop'
+      id: 'breakfast',
+      name: 'BREAKFAST',
+      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=400&fit=crop'
     },
     {
-      id: 'plus-size-women',
-      name: 'PLUS SIZE',
+      id: 'combo-meal',
+      name: 'COMBO MEALS',
       image: '/lovable-uploads/eca9ad5a-9d61-4827-bf3c-e5457cc2030f.png'
     },
     {
-      id: 'luxe-women',
-      name: 'LUXE',
-      image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=300&h=400&fit=crop'
+      id: 'premium',
+      name: 'PREMIUM',
+      image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300&h=400&fit=crop'
     },
     {
-      id: 'under-999-women',
-      name: 'UNDER ₹999',
-      subtitle: '₹999',
-      image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300&h=400&fit=crop',
+      id: 'under-200',
+      name: 'UNDER ₹200',
+      subtitle: '₹200',
+      image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=300&h=400&fit=crop',
       isPriceCategory: true
     }
   ],
-  men: [
+  'south-indian': [
     {
-      id: 'deal-men',
-      name: 'SNITCH DEAL OF THE DAY',
-      subtitle: 'UP TO 40% OFF*',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300&h=400&fit=crop',
+      id: 'deal-south',
+      name: 'FILTER COFFEE COMBO',
+      subtitle: 'UP TO 25% OFF*',
+      image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300&h=400&fit=crop',
       isDeal: true
     },
     {
-      id: 'new-arrivals-men',
-      name: 'NEW ARRIVALS',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop'
+      id: 'dosa',
+      name: 'DOSAS',
+      image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300&h=400&fit=crop'
     },
     {
-      id: 'shirts-men',
-      name: 'SHIRTS',
-      image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=300&h=400&fit=crop'
+      id: 'idli-vada',
+      name: 'IDLI & VADA',
+      image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=400&fit=crop'
     },
     {
-      id: 'trousers',
-      name: 'TROUSERS',
-      image: 'https://images.unsplash.com/photo-1506629905543-2ad2bb0b9348?w=300&h=400&fit=crop'
+      id: 'uttapam',
+      name: 'UTTAPAM',
+      image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?w=300&h=400&fit=crop'
     },
     {
-      id: 'cargo-pants',
-      name: 'CARGO PANTS',
-      image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=300&h=400&fit=crop'
+      id: 'sambar-rasam',
+      name: 'SAMBAR & RASAM',
+      image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=300&h=400&fit=crop'
     },
     {
-      id: 'polo-tshirts',
-      name: 'POLO T-SHIRTS',
-      image: 'https://images.unsplash.com/photo-1618886614638-80e3c103d31a?w=300&h=400&fit=crop'
-    },
-    {
-      id: 'graphic-tees',
-      name: 'GRAPHIC TEES',
-      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop'
-    },
-    {
-      id: 'baggy-jeans',
-      name: 'BAGGY JEANS',
-      image: 'https://images.unsplash.com/photo-1542272454315-7ad9f1ba8b80?w=300&h=400&fit=crop'
-    },
-    {
-      id: 'essentials-men',
-      name: 'ESSENTIALS',
-      image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=300&h=400&fit=crop'
-    },
-    {
-      id: 'plus-size-men',
-      name: 'PLUS SIZE',
-      image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop'
-    },
-    {
-      id: 'luxe-men',
-      name: 'LUXE',
-      image: 'https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=300&h=400&fit=crop'
-    },
-    {
-      id: 'under-999-men',
-      name: 'UNDER ₹999',
-      subtitle: '₹999',
-      image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=300&h=400&fit=crop',
-      isPriceCategory: true
+      id: 'curd-rice',
+      name: 'CURD RICE',
+      image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=300&h=400&fit=crop'
     }
   ],
-  kids: [
+  continental: [
     {
-      id: 'deal-kids',
-      name: 'KIDS DEAL OF THE DAY',
-      subtitle: 'UP TO 40% OFF*',
-      image: 'https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=300&h=400&fit=crop',
+      id: 'deal-continental',
+      name: 'HEALTHY MEAL DEAL',
+      subtitle: 'UP TO 20% OFF*',
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=400&fit=crop',
       isDeal: true
     },
     {
-      id: 'boys-collection',
-      name: 'BOYS COLLECTION',
-      image: 'https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=300&h=400&fit=crop'
+      id: 'pasta',
+      name: 'PASTA',
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=400&fit=crop'
     },
     {
-      id: 'girls-collection',
-      name: 'GIRLS COLLECTION',
-      image: 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=300&h=400&fit=crop'
+      id: 'salads',
+      name: 'SALADS',
+      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=400&fit=crop'
     },
     {
-      id: 'baby-collection',
-      name: 'BABY COLLECTION',
-      image: 'https://images.unsplash.com/photo-1522771930-78848d9293e8?w=300&h=400&fit=crop'
+      id: 'sandwiches',
+      name: 'SANDWICHES',
+      image: 'https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=300&h=400&fit=crop'
     },
     {
-      id: 'toys-games',
-      name: 'TOYS & GAMES',
-      image: 'https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=300&h=400&fit=crop'
+      id: 'soups',
+      name: 'SOUPS',
+      image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=300&h=400&fit=crop'
     },
     {
-      id: 'school-wear',
-      name: 'SCHOOL WEAR',
-      image: 'https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=300&h=400&fit=crop'
+      id: 'wraps',
+      name: 'WRAPS',
+      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=400&fit=crop'
     }
   ],
-  accessories: [
+  desserts: [
     {
-      id: 'deal-accessories',
-      name: 'ACCESSORIES DEAL',
-      subtitle: 'UP TO 40% OFF*',
-      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=400&fit=crop',
+      id: 'deal-desserts',
+      name: 'SWEET TREAT COMBO',
+      subtitle: 'UP TO 30% OFF*',
+      image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=400&fit=crop',
       isDeal: true
     },
     {
-      id: 'bags',
-      name: 'BAGS',
-      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=400&fit=crop'
+      id: 'traditional-sweets',
+      name: 'TRADITIONAL SWEETS',
+      image: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=300&h=400&fit=crop'
     },
     {
-      id: 'watches',
-      name: 'WATCHES',
-      image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=300&h=400&fit=crop'
+      id: 'cakes-pastries',
+      name: 'CAKES & PASTRIES',
+      image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=400&fit=crop'
     },
     {
-      id: 'jewelry',
-      name: 'JEWELRY',
-      image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=300&h=400&fit=crop'
+      id: 'ice-cream',
+      name: 'ICE CREAM',
+      image: 'https://images.unsplash.com/photo-1560008511-471c2703e8a1?w=300&h=400&fit=crop'
     },
     {
-      id: 'sunglasses',
-      name: 'SUNGLASSES',
-      image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=200&h=300&fit=crop'
-    },
-    {
-      id: 'wallets',
-      name: 'WALLETS',
-      image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=300&h=400&fit=crop'
+      id: 'kheer-pudding',
+      name: 'KHEER & PUDDING',
+      image: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=300&h=400&fit=crop'
     }
   ]
 };
 
 export const products = {
-  women: [
+  'north-indian': [
     {
-      id: 'w1',
-      name: 'Floral Print Dress',
-      price: 1299,
-      originalPrice: 1999,
-      image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&h=400&fit=crop',
-      brand: 'H&M',
-      category: 'women',
-      subcategory: 'dresses'
+      id: 'ni1',
+      name: 'Home Style Dal Chawal',
+      price: 180,
+      originalPrice: 220,
+      image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=300&h=400&fit=crop',
+      brand: 'Priya\'s Kitchen',
+      category: 'north-indian',
+      subcategory: 'dal-chawal',
+      slotsLeft: 5,
+      ingredients: 'Toor dal, Basmati rice, Turmeric, Cumin, Amul ghee',
+      customizations: ['Extra ghee', 'Less salt', 'Amul butter on rice']
     },
     {
-      id: 'w2',
-      name: 'High-Waist Skinny Jeans',
-      price: 1999,
-      originalPrice: 2999,
-      image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=300&h=400&fit=crop',
-      brand: 'Zara',
-      category: 'women',
-      subcategory: 'jeans'
+      id: 'ni2',
+      name: 'Punjabi Rajma Chawal',
+      price: 220,
+      originalPrice: 280,
+      image: 'https://images.unsplash.com/photo-1574653853027-5d3348d37e7b?w=300&h=400&fit=crop',
+      brand: 'Mama\'s Kitchen',
+      category: 'north-indian',
+      subcategory: 'curry',
+      slotsLeft: 3,
+      ingredients: 'Rajma beans, Basmati rice, Onions, Tomatoes, Cream',
+      customizations: ['Extra cream', 'Less spicy', 'Brown rice option']
     },
     {
-      id: 'w3',
-      name: 'Silk Ethnic Kurti',
-      price: 2499,
-      originalPrice: 3499,
-      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop',
-      brand: 'Jockey',
-      category: 'women',
-      subcategory: 'ethnic'
+      id: 'ni3',
+      name: 'Aloo Paratha with Curd',
+      price: 150,
+      originalPrice: 190,
+      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=400&fit=crop',
+      brand: 'Dadi\'s Recipe',
+      category: 'north-indian',
+      subcategory: 'paratha',
+      slotsLeft: 8,
+      ingredients: 'Wheat flour, Potatoes, Curd, Amul butter, Green chilies',
+      customizations: ['Extra butter', 'Pickle on side', 'Jaggery option']
     }
   ],
-  men: [
+  'south-indian': [
     {
-      id: 'm1',
-      name: 'Cotton Formal Shirt',
-      price: 1599,
-      originalPrice: 2299,
-      image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=300&h=400&fit=crop',
-      brand: 'H&M',
-      category: 'men',
-      subcategory: 'shirts'
+      id: 'si1',
+      name: 'Masala Dosa with Sambar',
+      price: 120,
+      originalPrice: 150,
+      image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300&h=400&fit=crop',
+      brand: 'Amma\'s Kitchen',
+      category: 'south-indian',
+      subcategory: 'dosa',
+      slotsLeft: 10,
+      ingredients: 'Rice, Urad dal, Potatoes, Coconut oil, Curry leaves',
+      customizations: ['Extra sambar', 'Coconut chutney', 'No oil']
     },
     {
-      id: 'm2',
-      name: 'Slim Fit Chinos',
-      price: 1899,
-      originalPrice: 2599,
-      image: 'https://images.unsplash.com/photo-1506629905543-2ad2bb0b9348?w=300&h=400&fit=crop',
-      brand: 'Zara',
-      category: 'men',
-      subcategory: 'trousers'
-    },
-    {
-      id: 'm3',
-      name: 'Graphic Print T-Shirt',
-      price: 899,
-      originalPrice: 1299,
-      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop',
-      brand: 'Jockey',
-      category: 'men',
-      subcategory: 'tshirts'
+      id: 'si2',
+      name: 'Idli Sambar (4 pieces)',
+      price: 100,
+      originalPrice: 130,
+      image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=400&fit=crop',
+      brand: 'Tamil Kitchen',
+      category: 'south-indian',
+      subcategory: 'idli-vada',
+      slotsLeft: 6,
+      ingredients: 'Rice, Urad dal, Toor dal, Vegetables, Coconut',
+      customizations: ['Extra idli', 'Ghee on top', 'Filter coffee combo']
     }
   ],
-  footwear: [
+  continental: [
     {
-      id: 'f1',
-      name: 'White Sneakers',
-      price: 2999,
-      originalPrice: 3999,
-      image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=400&fit=crop',
-      brand: 'H&M',
-      category: 'footwear',
-      subcategory: 'sneakers'
+      id: 'c1',
+      name: 'Penne Arrabbiata',
+      price: 250,
+      originalPrice: 320,
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=400&fit=crop',
+      brand: 'Maria\'s Kitchen',
+      category: 'continental',
+      subcategory: 'pasta',
+      slotsLeft: 4,
+      ingredients: 'Penne pasta, Tomatoes, Garlic, Olive oil, Basil',
+      customizations: ['Extra cheese', 'Whole wheat pasta', 'Less spicy']
     },
     {
-      id: 'f2',
-      name: 'Leather Boots',
-      price: 4999,
-      originalPrice: 6999,
-      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5e?w=300&h=400&fit=crop',
-      brand: 'Zara',
-      category: 'footwear',
-      subcategory: 'boots'
+      id: 'c2',
+      name: 'Mediterranean Salad Bowl',
+      price: 180,
+      originalPrice: 230,
+      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=400&fit=crop',
+      brand: 'Healthy Bites',
+      category: 'continental',
+      subcategory: 'salads',
+      slotsLeft: 7,
+      ingredients: 'Mixed greens, Olives, Feta cheese, Olive oil, Lemon',
+      customizations: ['Extra feta', 'No cheese', 'Add avocado']
     }
   ],
-  accessories: [
+  desserts: [
     {
-      id: 'a1',
-      name: 'Leather Handbag',
-      price: 3999,
-      originalPrice: 5999,
-      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=400&fit=crop',
-      brand: 'H&M',
-      category: 'accessories',
-      subcategory: 'bags'
+      id: 'd1',
+      name: 'Homemade Gajar Halwa',
+      price: 120,
+      originalPrice: 160,
+      image: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=300&h=400&fit=crop',
+      brand: 'Sweet Treats',
+      category: 'desserts',
+      subcategory: 'traditional-sweets',
+      slotsLeft: 5,
+      ingredients: 'Carrots, Milk, Sugar, Cardamom, Almonds',
+      customizations: ['Extra dry fruits', 'Less sugar', 'Vegan option']
     },
     {
-      id: 'a2',
-      name: 'Classic Watch',
-      price: 7999,
-      originalPrice: 9999,
-      image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=300&h=400&fit=crop',
-      brand: 'Zara',
-      category: 'accessories',
-      subcategory: 'watches'
+      id: 'd2',
+      name: 'Chocolate Brownie',
+      price: 80,
+      originalPrice: 120,
+      image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=400&fit=crop',
+      brand: 'Baker\'s Delight',
+      category: 'desserts',
+      subcategory: 'cakes-pastries',
+      slotsLeft: 12,
+      ingredients: 'Dark chocolate, Butter, Eggs, Flour, Walnuts',
+      customizations: ['Extra chocolate', 'Eggless option', 'Ice cream on top']
     }
   ]
 };
@@ -430,104 +411,140 @@ export const products = {
 export const quickPicks = [
   {
     id: 'q1',
-    name: 'Basic White Tee',
-    price: 599,
-    originalPrice: 899,
-    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop',
-    brand: 'H&M'
+    name: 'Quick Dal Rice Bowl',
+    price: 150,
+    originalPrice: 190,
+    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=300&h=400&fit=crop',
+    brand: 'Express Kitchen',
+    slotsLeft: 15,
+    ingredients: 'Yellow dal, Rice, Turmeric, Cumin',
+    customizations: ['Extra ghee', 'Less salt']
   },
   {
     id: 'q2',
-    name: 'Blue Denim Jacket',
-    price: 1999,
-    originalPrice: 2999,
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=400&fit=crop',
-    brand: 'Zara'
+    name: 'Grilled Chicken Salad',
+    price: 280,
+    originalPrice: 350,
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=400&fit=crop',
+    brand: 'Healthy Choice',
+    slotsLeft: 8,
+    ingredients: 'Chicken breast, Mixed greens, Olive oil',
+    customizations: ['Extra chicken', 'No dressing']
   },
   {
     id: 'q3',
-    name: 'Black Casual Shoes',
-    price: 2499,
-    originalPrice: 3499,
-    image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300&h=400&fit=crop',
-    brand: 'Jockey'
+    name: 'Masala Chai & Biscuits',
+    price: 60,
+    originalPrice: 80,
+    image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=400&fit=crop',
+    brand: 'Chai Corner',
+    slotsLeft: 20,
+    ingredients: 'Tea leaves, Milk, Sugar, Cardamom',
+    customizations: ['Less sugar', 'Almond milk', 'Extra strong']
   },
   {
     id: 'q4',
-    name: 'Cotton Polo Shirt',
-    price: 1299,
-    originalPrice: 1799,
-    image: 'https://images.unsplash.com/photo-1618886614638-80e3c103d31a?w=300&h=400&fit=crop',
-    brand: 'H&M'
+    name: 'Fruit Smoothie Bowl',
+    price: 120,
+    originalPrice: 160,
+    image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=400&fit=crop',
+    brand: 'Fresh Vibes',
+    slotsLeft: 12,
+    ingredients: 'Mixed fruits, Yogurt, Honey, Granola',
+    customizations: ['Extra fruits', 'No honey', 'Chia seeds']
   }
 ];
 
 export const trendingProducts = [
   {
     id: 't1',
-    name: 'Oversized Hoodie',
-    price: 1799,
-    originalPrice: 2599,
-    image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=400&fit=crop',
-    brand: 'Zara'
+    name: 'Butter Chicken & Naan',
+    price: 320,
+    originalPrice: 420,
+    image: 'https://images.unsplash.com/photo-1574653853027-5d3348d37e7b?w=300&h=400&fit=crop',
+    brand: 'Royal Kitchen',
+    slotsLeft: 6,
+    ingredients: 'Chicken, Tomatoes, Cream, Butter, Wheat flour',
+    customizations: ['Extra gravy', 'Garlic naan', 'Less cream']
   },
   {
     id: 't2',
-    name: 'High-Waist Jeans',
-    price: 2199,
-    originalPrice: 2999,
-    image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=300&h=400&fit=crop',
-    brand: 'H&M'
+    name: 'Avocado Toast & Eggs',
+    price: 180,
+    originalPrice: 230,
+    image: 'https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=300&h=400&fit=crop',
+    brand: 'Morning Fresh',
+    slotsLeft: 10,
+    ingredients: 'Sourdough bread, Avocado, Eggs, Olive oil',
+    customizations: ['Poached eggs', 'Extra avocado', 'Multigrain bread']
   },
   {
     id: 't3',
-    name: 'Sneaker Collection',
-    price: 3499,
-    originalPrice: 4999,
-    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=400&fit=crop',
-    brand: 'Jockey'
+    name: 'Hyderabadi Biryani',
+    price: 280,
+    originalPrice: 350,
+    image: 'https://images.unsplash.com/photo-1563379091339-03246963d321?w=300&h=400&fit=crop',
+    brand: 'Nawab\'s Kitchen',
+    slotsLeft: 4,
+    ingredients: 'Basmati rice, Mutton, Saffron, Yogurt, Fried onions',
+    customizations: ['Extra raita', 'Chicken option', 'Less spicy']
   },
   {
     id: 't4',
-    name: 'Floral Summer Dress',
-    price: 1599,
-    originalPrice: 2299,
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&h=400&fit=crop',
-    brand: 'Zara'
+    name: 'Fresh Fruit Tart',
+    price: 150,
+    originalPrice: 200,
+    image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=400&fit=crop',
+    brand: 'Sweet Corner',
+    slotsLeft: 8,
+    ingredients: 'Pastry base, Custard, Mixed fruits, Honey',
+    customizations: ['Extra fruits', 'Sugar-free', 'Whipped cream']
   }
 ];
 
 export const justInProducts = [
   {
     id: 'j1',
-    name: 'Minimalist Watch',
-    price: 4999,
-    originalPrice: 6999,
-    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=300&h=400&fit=crop',
-    brand: 'H&M'
+    name: 'Quinoa Power Bowl',
+    price: 220,
+    originalPrice: 280,
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=400&fit=crop',
+    brand: 'Fit Foods',
+    slotsLeft: 12,
+    ingredients: 'Quinoa, Chickpeas, Vegetables, Tahini',
+    customizations: ['Extra protein', 'No dressing', 'Add avocado']
   },
   {
     id: 'j2',
-    name: 'Designer Handbag',
-    price: 5999,
-    originalPrice: 7999,
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=400&fit=crop',
-    brand: 'Zara'
+    name: 'Grandma\'s Khichdi',
+    price: 130,
+    originalPrice: 170,
+    image: 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=300&h=400&fit=crop',
+    brand: 'Comfort Kitchen',
+    slotsLeft: 15,
+    ingredients: 'Rice, Moong dal, Turmeric, Ginger, Ghee',
+    customizations: ['Extra ghee', 'Add vegetables', 'Less salt']
   },
   {
     id: 'j3',
-    name: 'Premium Sunglasses',
-    price: 2999,
-    originalPrice: 3999,
-    image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=400&fit=crop',
-    brand: 'Jockey'
+    name: 'Filter Coffee & Vada',
+    price: 90,
+    originalPrice: 120,
+    image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=400&fit=crop',
+    brand: 'South Delights',
+    slotsLeft: 18,
+    ingredients: 'Coffee beans, Milk, Urad dal, Coconut oil',
+    customizations: ['Extra strong', 'Less sugar', 'Coconut chutney']
   },
   {
     id: 'j4',
-    name: 'Leather Wallet',
-    price: 1499,
-    originalPrice: 1999,
-    image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=300&h=400&fit=crop',
-    brand: 'H&M'
+    name: 'Homemade Pasta Salad',
+    price: 160,
+    originalPrice: 210,
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=400&fit=crop',
+    brand: 'Italian Touch',
+    slotsLeft: 9,
+    ingredients: 'Pasta, Cherry tomatoes, Basil, Mozzarella',
+    customizations: ['Extra cheese', 'Gluten-free pasta', 'No cheese']
   }
 ];

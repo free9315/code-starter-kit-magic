@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import SearchBar from '../components/SearchBar';
@@ -19,6 +20,9 @@ interface LegacyProduct {
   image: string;
   brand: string;
   originalPrice?: number;
+  slotsLeft?: number;
+  ingredients?: string;
+  customizations?: string[];
 }
 
 interface CartItem extends LegacyProduct {
@@ -28,7 +32,7 @@ interface CartItem extends LegacyProduct {
 
 const Index: React.FC = () => {
   const navigate = useNavigate();
-  const [selectedCategory, setSelectedCategory] = useState('women');
+  const [selectedCategory, setSelectedCategory] = useState('north-indian');
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isSearchSticky, setIsSearchSticky] = useState(false);
 
@@ -52,7 +56,7 @@ const Index: React.FC = () => {
     } else {
       const newCartItem: CartItem = {
         ...product,
-        selectedSize: 'M',
+        selectedSize: 'Regular',
         quantity: 1
       };
       setCartItems([...cartItems, newCartItem]);
@@ -108,8 +112,8 @@ const Index: React.FC = () => {
                   <ShoppingCart className="w-5 h-5 text-black" />
                   <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></div>
                 </button>
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-semibold text-sm">B</span>
+                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                  <span className="text-white font-semibold text-sm">H</span>
                 </div>
               </div>
             </div>
@@ -138,7 +142,7 @@ const Index: React.FC = () => {
           </div>
           
           <div className="my-4">
-            <MovingBanner text="FLAT 10% OFF ON YOUR FIRST ORDER" />
+            <MovingBanner text="FREE DELIVERY ON ORDERS ABOVE ₹299" />
           </div>
           
           <div className="bg-white">

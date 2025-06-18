@@ -1,31 +1,25 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Search, Mic } from 'lucide-react';
 
-const SearchBar: React.FC = () => {
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ['tshirt', 'dresses', 'bra'];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2000); // Change word every 2 seconds
-
-    return () => clearInterval(interval);
-  }, []);
+const SearchBar = () => {
+  const [searchQuery, setSearchQuery] = useState('');
 
   return (
-    <div className="bg-transparent px-[15px] mx-0 my-0 py-[5px]">
-      <div className="flex items-center gap-3">
-        {/* Search Bar - Full Width */}
-        <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-          <input 
-            type="text" 
-            placeholder={`Search '${words[currentWordIndex]}'`}
-            className="w-full pl-10 pr-12 py-3 bg-gray-800 text-white placeholder-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent" 
+    <div className="px-4 py-3">
+      <div className="relative">
+        <div className="flex items-center bg-white rounded-lg shadow-md">
+          <Search className="w-5 h-5 text-gray-400 ml-3" />
+          <input
+            type="text"
+            placeholder="Search for meals, chefs, cuisines..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="flex-1 px-3 py-3 text-sm text-gray-700 bg-transparent outline-none"
           />
-          <Mic className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+          <button className="p-3 text-gray-400 hover:text-gray-600">
+            <Mic className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </div>
