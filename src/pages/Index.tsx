@@ -83,13 +83,16 @@ const Index: React.FC = () => {
   return (
     <Layout cartItems={cartItems} onUpdateCartQuantity={handleUpdateCartQuantity} onRemoveCartItem={handleRemoveCartItem}>
       <div className="bg-white min-h-screen">
-        {/* Hero Section - Background image with overlay content */}
+        {/* Hero Section - Dark theme background image */}
         <div className="relative" style={{
           height: '55vh',
-          backgroundImage: 'url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
+          {/* Dark overlay for better contrast */}
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          
           {/* Top Bar Content Over Background */}
           <div className="absolute top-0 left-0 right-0 z-10 px-4 py-3">
             <div className="flex items-center justify-between">
